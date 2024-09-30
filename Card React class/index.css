@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -1px;
+}
+
+
+:root{
+   /* COLOR VARIABLES */
+   --backgroundColor:#e3e3e3;
+   --bigTextColor:#2e1f55;
+   --smallTextColor:#030101;
+   --outlineColor:#d9d9d9;
+
+   /* TEXT VARIABLES */
+   --headlineTextSize:3.25rem;
+   --bodyTextSize: 1rem;
+   --buttonTextSize:1.1rem;
+   --titleTextSize:1.2rem;
+
+   /* SPACE VARIABLES */
+   --bidPadding:2rem;
+   --smallPadding:1rem;
+   --columnGapSpace:0.75rem;
+   --bigRowGapSpace:4rem;
+   --smallRowGapSpace:1rem;
+   --smallerRowGapSpace:0.75rem;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --backgroundColor:#230b42;
+        --bigTextColor:#f8f8f8;
+        --smallTextColor:#d9d9d9;
+    }
+}
+
+.card-container{
+    width: 32%;
+    height: auto;
+    background-color:var(--backgroundColor);
+    margin:3rem auto ;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 4rem;
+    border: 1px solid var(--outlineColor);
+
+}
+
+.top-card-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.premium-container{
+    width: fit-content;
+    height: auto;
+}
+
+.premium-container p{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--bigTextColor);
+}
+
+.price-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items:baseline;
+    column-gap: 0.25rem;
+}
+
+.price-container h1{
+    font-size: 3.25rem;
+    font-weight: 400;
+    color: var(--bigTextColor);
+}
+
+.price-container p{
+    color: var(--smallTextColor);
+}
+
+
+.description-container{
+    width: 100%;
+    height: auto;
+    color: var(--smallTextColor);
+}
+
+.bottom-card-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.card-image-container{
+    width: 100%;
+    height: auto;
+    background-image: url("./image/proxy-image.jpeg");
+    padding: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+.card-button-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+
+.fingerprint-icon{
+    background-color: black;
+    width: fit-content;
+    height: auto;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.75rem;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width:100%;
+    height: auto;
+    padding: 1rem;
+    border-radius:0.75rem ;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
